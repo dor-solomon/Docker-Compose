@@ -17,7 +17,7 @@ services:
       - sys_module
     restart: unless-stopped
   mealie:
-    image: ghcr.io/mealie-recipes/mealie:${VERSION:-v1.10.2}
+    image: ghcr.io/mealie-recipes/mealie:${MEALIE_VERSION:-v1.10.2}
     container_name: mealie
     network_mode: service:ts-mealie
     depends_on:
